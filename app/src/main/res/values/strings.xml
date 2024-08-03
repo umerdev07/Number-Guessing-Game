@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Guess Game</string>
+    <string name="title">Guess the Number between 1–100</string>
+    <string name="numberlist">1 2 3 4 5 6 7 8 9 10</string>
+    <string name="guessnumber">Guess Number</string>
+</resources>
