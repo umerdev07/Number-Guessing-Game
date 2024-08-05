@@ -8,12 +8,26 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/chances"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
         android:gravity="center"
-        android:padding="10dp"
+        android:padding="20dp"
         android:text="@string/title"
         android:textColor="@color/black"
         android:textSize="30sp"
@@ -40,19 +54,20 @@
 
     <Button
         android:id="@+id/guessnumber"
-        android:layout_width="172dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="68dp"
+        android:layout_width="133dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="56dp"
         android:background="@color/blue"
+        android:elevation="30dp"
         android:padding="6dp"
         android:text="@string/guessnumber"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/guessInput"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guessInput"
-        app:layout_constraintTop_toBottomOf="@+id/guessInput" />
+        app:layout_constraintTop_toBottomOf="@+id/guessInput"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/feedback"
@@ -65,5 +80,35 @@
         app:layout_constraintBottom_toTopOf="@+id/guessInput"
         app:layout_constraintEnd_toEndOf="@+id/title"
         app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <Button
+        android:id="@+id/resetbtn"
+        android:layout_width="133dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="52dp"
+        android:background="@color/red"
+        android:elevation="30dp"
+        android:padding="6dp"
+        android:text="@string/reset"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toEndOf="@+id/guessnumber"
+        app:layout_constraintTop_toBottomOf="@+id/guessInput"
+        app:layout_constraintVertical_bias="0.141" />
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/feedback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 </androidx.constraintlayout.widget.ConstraintLayout>
